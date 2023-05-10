@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./Styles/index.scss";
+import Home from "./Pages/Home";
+import Discover from "./Pages/Discover";
+import Firefox from "./Pages/Firefox";
+import Discord from "./Pages/Discord";
+import Vsc from "./Pages/Vsc";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/discover" element={<Discover />} />
+          {/* Discover - Route */}
+          <Route path="/firefox" element={<Firefox />} />
+          <Route path="/discord" element={<Discord />} />
+          <Route path="/vsc" element={<Vsc />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,62 @@
+.firefox {
+  background: linear-gradient(45deg, #2b2b2b, #4a4aff);
+  height: 100vh;
+
+  .cadre {
+    border: 2px solid black;
+    height: 99vh;
+
+    .onglets {
+      border-bottom: 2px solid black;
+      height: 5vh;
+
+      .tabs {
+        height: 5vh;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        width: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px 0 5px;
+        p {
+          color: $text-color;
+        }
+      }
+    }
+    .bar {
+      border-bottom: 2px solid black;
+      height: 4vh;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      img {
+        padding: 0 10px 0 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .content {
+    height: 85vh;
+    .title {
+      text-align: center;
+      color: white;
+      font-size: 60px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        font-size: 40px;
+        margin: 100px 50px 0 50px;
+        background: -webkit-linear-gradient(45deg, white, $hover-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        list-style: none;
+      }
+    }
+  }
+}
