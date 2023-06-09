@@ -7,7 +7,7 @@ const Vsc = () => {
     navigate("/discord", { replace: true });
   }
   function next() {
-    navigate("/discover", { replace: true });
+    navigate("/terminal", { replace: true });
   }
   return (
     <div className="vsc">

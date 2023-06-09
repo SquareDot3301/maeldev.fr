@@ -1,0 +1,25 @@
+.terminal {
+  background: linear-gradient(45deg, #2b2b2b, #4a4aff);
+  padding: 10px;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cadre {
+    border: 2px solid black;
+    width: 50%;
+    height: 55vh;
+    display: flex;
+
+    .top-bar {
+      height: 5vh;
+      border: 1px solid black;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      padding: 10px;
+    }
+  }
+}
